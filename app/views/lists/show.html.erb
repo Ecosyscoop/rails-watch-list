@@ -1,2 +1,11 @@
 <h1>Lists#show</h1>
 <p>Find me in app/views/lists/show.html.erb</p>
+
+<p><%= @list.name %></p>
+<p><%= @list.bookmarks %></p>
+
+<%= link_to "Add a bookmark", new_list_bookmark_path(list_id: @list.id) %>
+
+
+
+<%# create a rating and review form here! %>
