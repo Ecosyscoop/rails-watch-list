@@ -6,8 +6,8 @@
 
 <ol>
   <% @list.bookmarks.each do |bookmark| %>
-    <%= bookmark.movie.title %>
-    <li><%= bookmark.comment %></li>
+    <li><%= bookmark.movie.title %></li>
+    <%= bookmark.comment %>
   <% end %>
 </ol>
 
